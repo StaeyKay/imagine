@@ -75,3 +75,47 @@ const tweet1 = {
     console.log('Notify friends!', i);
     
   }
+
+// June 6th, Functions
+// Defining functions
+function login(username, password) {
+  if (username == 'mickeymond' && password == '1234') {
+    return 'User is logged in!';
+  } else if (username != 'mickeymond') {
+    return 'Invalid username'
+  } else if (password != '1234') {
+    return 'Invalid password'
+  } else {
+    return 'Invalid username or password!';
+  }
+}
+// Invoking functions
+login('hello', '1111');
+
+// Basic arithmetic
+12 + 23;
+90 - 53;
+5 * 9;
+60 / 5;
+78 % 4;
+
+// Comparison operators
+2 == '2';
+2 === '2';
+3 !== 2;
+
+// Built-in Math functions
+Math.round(37 / 24);
+Math.floor(37 / 24);
+Math.ceil(37 / 24);
+Math.random();
+Math.max(8, 12, 45, 23, 8, 21, 96, 10, 18, 39);
+
+Math.ceil(Math.random() * 1000000);
+
+// Order of operations
+1 * 2 + 3 - 4 / 2 + 2**2;
+
+// Handling user inputs
+1200 + Number('250');
+
