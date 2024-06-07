@@ -119,3 +119,22 @@ Math.ceil(Math.random() * 1000000);
 // Handling user inputs
 1200 + Number('250');
 
+// String concatenation
+firstName = 'Esther ';
+lastName = ' Kwashie';
+firstName.trim() + ' ' + lastName.trim();
+
+// Template literals
+`${firstName.trim()} ${lastName.trim()}`;
+
+// String methods
+firstName.length;
+lastName.length;
+`${firstName.trim()} ${lastName.trim()}`.length;
+firstName.toUpperCase();
+lastName.charAt(3);  
+`${firstName.trim()} ${lastName.trim()}`.trim(0);
+
+// String conversion
+String(2014)
+
