@@ -210,3 +210,46 @@ function even(number) {
   return number % 2 === 0;
 }
 numbers.filter(even);
+
+// Write a function that takes a user with name and dateOfBirth and returns true if their birthday is today else false
+// const user = {
+//   name: 'Martin King',
+//   dateOfBirth: '1970-06-17',
+// }
+function birthday (user){
+  if (user.dateOfBirth == '12/06/2024') {
+  return true
+  } else {
+    return false   
+  };
+};
+ // Invoking the function
+birthday(name, user.dateOfBirth);
+
+
+// An alternative approach
+function isBirthday(user) {
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth);
+  console.log(birthDate.getMonth(), today.getMonth());
+  console.log(birthDate.getDate(), today.getDate());
+  if (today.getMonth() === birthDate.getMonth() && today.getDate() === birthDate.getDate()) {
+  return true;
+  } else {
+    return false;
+  }
+}
+
+isBirthday(user);
+
+// Write a function that takes a user with name and dateOfBirth and returns a birthday message if their birthday is today else return not your birthday
+function birthdayMessage(user) {
+  if (isBirthday(user)) {
+  return `Happy birthday ${user.name}`;
+  } else {
+    return `Sorry, ${user.name} it is not your birthday`;
+  }
+}
+
+birthdayMessage(user);
+
